@@ -9,7 +9,7 @@ class MainController extends Controller
 {
     public function showView(): View
     {
-        return view('home', ['value' => 50]);
+        return view('home', ['value' => 100]);
     }
     public function PassandoDadosPraView(): View
     {
