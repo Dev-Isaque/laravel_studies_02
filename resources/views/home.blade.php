@@ -5,14 +5,14 @@
 
     {{-- comentário de blade --}}
 
-    {{-- Instrução IF simples --}}
+    {{-- -------- Instrução IF simples -------- --}}
     {{--  
     @if ($value == 100)
         <h1>Primeira parte do código</h1>
     @endif 
     --}}
 
-    {{-- Instrução IF ELSE --}}
+    {{-- -------- Instrução IF ELSE -------- --}}
     {{--   
     @if ($value == 100)
         <h1>Parte do IF</h1>
@@ -21,7 +21,7 @@
     @endif 
     --}}
 
-    {{-- Instrução IF ELSEIF ELSE ENDIF --}}
+    {{-- -------- Instrução IF ELSEIF ELSE ENDIF -------- --}}
     {{--   
     @if ($value < 10)
         <p>Saida do If</p>
@@ -36,7 +36,7 @@
     @endif 
     --}}
 
-    {{-- Switch --}}
+    {{-- -------- Switch -------- --}}
     {{--  
     @switch($value)
         @case(100)
@@ -54,5 +54,30 @@
         @default
             <h1>Outros</h1>
     @endswitch
+    --}}
+
+    {{-- -------- Empty -------- --}}
+    {{-- 
+    @empty($value)
+        <p>NÃO EXISTE</p>
+    @else
+        <p>EXISTE</p>
+    @endempty 
+    --}}
+
+    {{-- -------- Isset -------- --}}
+    {{-- 
+    @isset($value)
+        <p>EXISTE A VARIAVEL</p>
+    @else
+        <p>NÃO EXISTE A VARIAVEL</p>
+    @endisset 
+    --}}
+
+    {{-- -------- unless -------- --}}
+    {{-- 
+    @unless ($value != 100)
+        <p>OK!!!!!!!</p>
+    @endunless 
     --}}
 @endsection
