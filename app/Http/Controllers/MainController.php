@@ -18,6 +18,10 @@ class MainController extends Controller
 
         return view('home', $data);
     }
+    public function submitForm():void {
+        echo "Formulario enviado";
+    }
+
     public function PassandoDadosPraView(): View
     {
         // método 1
